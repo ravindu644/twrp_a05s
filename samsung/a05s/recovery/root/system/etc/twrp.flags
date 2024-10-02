@@ -25,4 +25,4 @@
 /vendor_boot        emmc      /dev/block/bootdevice/by-name/vendor_boot        flags=display=vendor_boot;backup=1;flashimg
 
 /external_sd	auto		/dev/block/mmcblk1p1	/dev/block/mmcblk1			flags=display="Micro SD Card";storage;wipeingui;removable
-/usb_otg		auto		/dev/block/sda1 		/dev/block/sda				flags=display="USB OTG";storage;wipeingui;removable
+/usb_otg        auto        /dev/block/sdg1         /dev/block/sdg              flags=display="USB OTG";storage;wipeingui;removable
