@@ -3,7 +3,7 @@
 ### Working:
 - Touchscreen.
 - USB OTG and External micro SD card.
-- Dynamic partition (system,vendor,product,odm) flash, backuo, restore.
+- Dynamic partition (system,vendor,product,odm) flash, backup, restore.
 - Backup and Restore.
 - Other standard recovery operations..
 
