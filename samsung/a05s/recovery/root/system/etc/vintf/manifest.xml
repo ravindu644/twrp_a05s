@@ -4,7 +4,7 @@
         device/qcom/qssi/framework_manifest.xml
         vendor/qcom/proprietary/commonsys/gps-release/qcc_manifest.xml
 -->
-<manifest version="7.0" type="framework">
+<manifest version="4.0" type="framework">
     <hal format="hidl" max-level="6">
         <name>android.frameworks.displayservice</name>
         <transport>hwbinder</transport>
