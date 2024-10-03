@@ -1,17 +1,16 @@
 ## - Changelog for Latest TWRP Build -
 
 ### Working:
-- Touchscreen is fully functional.
-- USB OTG support is working as expected.
-- SD Card detection and mounting is supported.
-- Dynamic partition flashing is now supported.
-- Backup and restore functionalities are verified and stable.
-- Other standard recovery operations are functioning correctly.
+- Touchscreen.
+- USB OTG and External micro SD card.
+- Dynamic partition (system,vendor,product,odm) flash, backuo, restore.
+- Backup and Restore.
+- Other standard recovery operations..
 
 ### Not Working:
-- **Decryption**: Due to Samsung's complex encryption schemes, decryption is almost impossible to implement.
-- **Vibration**: Vibration and haptic feedback are not functioning.
-- **Date and Time**: The date is always set to 1970 (RTC issue), and proper time settings are not maintained.
+- **Decryption**: Due to Samsung's complex encryption schemes, decryption is almost impossible to implement. (you must format data and flash disabled dm verity force encrypt zip)
+- **Vibration**: Vibration and haptic feedbacks. (I tried to fix it, but it didn't work)
+- **Date and Time**: The date is always set to 1970.
 
 ### Screenshots:
 
