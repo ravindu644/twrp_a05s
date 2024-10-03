@@ -1,8 +1,8 @@
 # Direct image flashing
-/system_image       emmc         /dev/block/mapper/system            flags=display="System Image";backup=1;flashimg=1;
-/odm_image          emmc         /dev/block/mapper/odm               flags=display="ODM Image";backup=1;flashimg=1;
-/product_image      emmc         /dev/block/mapper/product           flags=display="Product Image";backup=1;flashimg=1;
-/vendor_image       emmc         /dev/block/mapper/vendor            flags=display="Vendor Image";backup=1;flashimg=1;
+/system_image       emmc         /dev/block/mapper/system            flags=display="System Image";flashimg
+/odm_image          emmc         /dev/block/mapper/odm               flags=display="ODM Image";flashimg
+/product_image      emmc         /dev/block/mapper/product           flags=display="Product Image";flashimg
+/vendor_image       emmc         /dev/block/mapper/vendor            flags=display="Vendor Image";flashimg
 
 /system_root            erofs     system                                           flags=display=system
 /system_root            f2fs      system                                           flags=display=system
