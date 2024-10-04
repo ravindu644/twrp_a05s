@@ -103,6 +103,7 @@ TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
+TW_FRAMERATE := 60
 RECOVERY_SDCARD_ON_DATA := true
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
