@@ -1,9 +1,3 @@
-# Direct image flashing
-/system_image       emmc         /dev/block/mapper/system            flags=display="System Image";flashimg;backup=0
-/odm_image          emmc         /dev/block/mapper/odm               flags=display="ODM Image";flashimg;backup=0
-/product_image      emmc         /dev/block/mapper/product           flags=display="Product Image";flashimg;backup=0
-/vendor_image       emmc         /dev/block/mapper/vendor            flags=display="Vendor Image";flashimg;backup=0
-
 /system_root            erofs     system                                           flags=display=system
 /system_root            f2fs      system                                           flags=display=system
 /system_root            ext4      system                                           flags=display=system
@@ -17,19 +11,20 @@
 /system_dlkm            ext4      system_dlkm                                      flags=display=system_dlkm
 
 
-/boot               emmc      /dev/block/bootdevice/by-name/boot               flags=display=boot;backup=1;flashimg
-/recovery           emmc      /dev/block/bootdevice/by-name/recovery           flags=display=recovery;backup=1;flashimg
-/metadata           ext4      /dev/block/by-name/metadata                      flags=display=metadata
-/data               f2fs      /dev/block/bootdevice/by-name/userdata           flags=display=data
-/persist	          ext4		  /dev/block/bootdevice/by-name/persist		         flags=display="Persist"
-/cache              ext4      /dev/block/bootdevice/by-name/cache              flags=display=cache;wipeingui
-/efs                ext4      /dev/block/bootdevice/by-name/sec_efs            flags=display=efs;backup=1;flashimg
-/sec_efs            ext4      /dev/block/bootdevice/by-name/sec_efs            flags=display=sec_efs;backup=1;flashimg
-/dtbo               emmc      /dev/block/bootdevice/by-name/dtbo               flags=display=dtbo;backup=1;flashimg
-/prism              ext4      /dev/block/bootdevice/by-name/prism              flags=display=prism;backup=1;flashimg
-/optics             ext4      /dev/block/bootdevice/by-name/optics             flags=display=optics;backup=1;flashimg
-/vbmeta             emmc      /dev/block/bootdevice/by-name/vbmeta             flags=display=vbmeta;backup=1;flashimg
-/vendor_boot        emmc      /dev/block/bootdevice/by-name/vendor_boot        flags=display=vendor_boot;backup=1;flashimg
+/boot               emmc      /dev/block/bootdevice/by-name/boot               flags=display=Boot;backup=1;flashimg
+/recovery           emmc      /dev/block/bootdevice/by-name/recovery           flags=display=Recovery;backup=1;flashimg
+/metadata           ext4      /dev/block/by-name/metadata                      flags=display=Metadata;wipeingui
+/persist	          ext4		  /dev/block/bootdevice/by-name/persist		   flags=display="Persist"
+/cache              ext4      /dev/block/bootdevice/by-name/cache              flags=display=Cache;wipeingui
+/efs                ext4      /dev/block/bootdevice/by-name/sec_efs            flags=display="EFS";backup=1;flashimg
+/sec_efs            ext4      /dev/block/bootdevice/by-name/sec_efs            flags=display="SEC EFS";backup=1;flashimg
+/firmware	        emmc		/dev/block/bootdevice/by-name/apnhlos		    flags=backup=1;display="Firmware"
+/modem		        emmc		/dev/block/bootdevice/by-name/modem		        flags=backup=1;display="Modem"
+/dtbo               emmc      /dev/block/bootdevice/by-name/dtbo               flags=display=DTBO;backup=1;flashimg
+/prism              ext4      /dev/block/bootdevice/by-name/prism              flags=display="Prism Image";backup=1;flashimg
+/optics             ext4      /dev/block/bootdevice/by-name/optics             flags=display="Optics Image";backup=1;flashimg
+/vbmeta             emmc      /dev/block/bootdevice/by-name/vbmeta             flags=display="Vbmeta";backup=1;flashimg
+/vendor_boot        emmc      /dev/block/bootdevice/by-name/vendor_boot        flags=display="Vendor Boot";backup=1;flashimg
 
 /external_sd	auto		/dev/block/mmcblk1p1	/dev/block/mmcblk1			flags=display="Micro SD Card";storage;wipeingui;removable
 /usb_otg        auto        /dev/block/sdg1         /dev/block/sdg              flags=display="USB OTG";storage;wipeingui;removable
