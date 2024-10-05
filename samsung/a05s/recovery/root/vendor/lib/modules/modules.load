@@ -17,3 +17,4 @@ pt_i2c.ko
 pt_device_access.ko
 raydium_ts.ko
 msm_video.ko
+leds-qpnp-vibrator-ldo.ko
