@@ -10,7 +10,7 @@
 - Other standard recovery operations..
 
 ### Not Working:
-- **Decryption**: not planned to implement yet (you must format data and flash disabled dm verity force encrypt zip)
+- **Decryption**: not planned to implement yet.
 
 ### Notes:
 - I can't do anything with Samsung's read only dynamic partitions because of the usage of shared blocks or something similar. We should manually disable shared blocks by unpacking and repacking the super image.
