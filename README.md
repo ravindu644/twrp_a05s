@@ -1,8 +1,10 @@
-## - Changelog for Latest TWRP Build v3 -
+## - Changelog for Latest TWRP Build v4 -
 
 ### Working:
 - Touchscreen.
-- Double tap to wake
+- 90hz Display.
+- Fastboot mode.
+- Double tap to wake.
 - USB OTG and External micro SD card.
 - Backup and Restore except for the mapped dynamic partitions.
 - Other standard recovery operations..
