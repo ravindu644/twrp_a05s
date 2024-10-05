@@ -26,6 +26,8 @@
 #
 
 import /init.recovery.display.rc
+import /vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
+
 
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
